@@ -1,0 +1,6 @@
+scikit-learn
+nltk
+pybase64
+jsonify
+flask_cors
+flask
