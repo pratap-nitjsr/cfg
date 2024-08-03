@@ -1,6 +1,14 @@
+import nltk
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+
+nltk.download('punkt')
+nltk.download('wordnet')
+try:
+    nltk.download('omw-1.4')
+except:
+    print("HaHa")
 
 def preprocess_text(text):
     text = text.lower()
